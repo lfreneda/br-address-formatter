@@ -1,0 +1,27 @@
+{
+  "name": "br-address-formatter",
+  "version": "0.0.1",
+  "description": "Uma biblioteca node estupidamente simples para formatar endereços estilo google lindão, manja?",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfreneda/br-address-formatter.git"
+  },
+  "keywords": [
+    "address",
+    "formater",
+    "endereço"
+  ],
+  "author": "Luiz Freneda <lfreneda@gmail.com> (http://www.freneda.com.br)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfreneda/br-address-formatter/issues"
+  },
+  "homepage": "https://github.com/lfreneda/br-address-formatter#readme",
+  "devDependencies": {
+    "ava": "^0.25.0"
+  }
+}
