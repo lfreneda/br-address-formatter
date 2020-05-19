@@ -4,7 +4,7 @@
   "description": "Uma biblioteca node estupidamente simples para formatar endereços estilo google lindão, manja?",
   "main": "lib/index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "ava --verbose"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/lfreneda/br-address-formatter#readme",
   "devDependencies": {
-    "ava": "^0.25.0"
+    "ava": "3.8.2"
   }
 }
