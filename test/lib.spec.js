@@ -11,6 +11,11 @@ test('given address object with postalCode address string should as expected', e
   expect.is(formattedAddress, '15085-480')
 })
 
+test('given address object with zipCode address string should as expected', expect => {
+  const formattedAddress = brAddressFormatter({ zipCode: '15085480' })
+  expect.is(formattedAddress, '15085-480')
+})
+
 test('given address object with postalCode and street address string should as expected', expect => {
   const formattedAddress = brAddressFormatter({
     postalCode: '15085480',

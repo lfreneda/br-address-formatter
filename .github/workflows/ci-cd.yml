@@ -14,7 +14,6 @@ jobs:
     strategy:
       matrix:
         node-version: [10.x]
-    
 
     steps:
       - uses: actions/checkout@v1
@@ -22,4 +21,4 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: npm test 
+      - run: npm test
