@@ -73,8 +73,20 @@ test('given address object with postalCode, street, city, state, neighborhood, n
     city: 'São Paulo',
     state: 'SP',
     neighborhood: 'Pinheiros',
-    complement: 'Ed.Alamac AP 133',
+    complement: 'Ed. Alamac AP 133',
     number: '383'
   })
-  expect.is(formattedAddress, 'Rua dos Pinheiros, 383 - Ed.Alamac AP 133 - Pinheiros, São Paulo - SP, 15085-480')
+  expect.is(formattedAddress, 'Rua dos Pinheiros, 383 - Ed. Alamac AP 133 - Pinheiros, São Paulo - SP, 15085-480')
+})
+
+test('given address object with postalCode in Mexican format should format as expected', expect => {
+  const formattedAddress = brAddressFormatter({
+    postalCode: '06010',
+    street: 'P.za de la Constitución',
+    city: 'Ciudad de México',
+    state: 'Cuauhtémoc',
+    neighborhood: 'Centro',
+    number: 'S/N'
+  })
+  expect.is(formattedAddress, 'P.za de la Constitución, S/N - Centro, Ciudad de México - Cuauhtémoc, 06010')
 })

@@ -4,7 +4,7 @@
   "description": "Uma biblioteca node estupidamente simples para formatar endereços estilo google lindão, manja?",
   "main": "lib/index.js",
   "scripts": {
-    "test": "ava --verbose"
+    "test": "npx ava --verbose"
   },
   "repository": {
     "type": "git",
