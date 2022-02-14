@@ -2,9 +2,9 @@
 
 Uma biblioteca estupidamente simples para formatar endereços estilo google lindão, manja?
 
-### Pra que?
+## Pra que?
 
-Para transformar endereços em objeto (geralmente persistidos em algum lugar) e tranformar em uma string formatada lindona estilo Google, sabe?
+Para transformar endereços em objeto (geralmente persistidos em algum lugar) e transformar em uma string formatada lindona estilo Google, sabe?
 
 ### Instalação
 
@@ -60,37 +60,12 @@ brAddressFormatter({
 
 ### API
 
-<table>
-  <tr>
-    <th>Keyword</th>
-    <th>Alias</th>
-  </tr>
-  <tr>
-    <td>street</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>number</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>complement</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>neighborhood</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>city</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>state</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>postalCode</td>
-    <td>zipCode</td>
-  </tr>
-</table>
+| Keyword      | Alias      |
+|--------------|------------|
+| street       | streetName |
+| number       |            |
+| complement   |            |
+| neighborhood |            |
+| city         |            |
+| state        |            |
+| postalCode   | zipCode    |
