@@ -72,9 +72,31 @@ test('given address with correct and incorrect keywords should be sanitized', ex
   })
 })
 
-test('given address with correct and alias keywords should be sanitized', expect => {
+test('given address with correct and alias for postalCode keyword should be sanitized', expect => {
   const address = sanitizer.sanitize({
     street: 'Rua teste',
+    number: 'Numero teste',
+    complement: 'Complemento teste',
+    neighborhood: 'Bairro teste',
+    city: 'Cidade teste',
+    state: 'Estado teste',
+    zipCode: 'CEP teste'
+  })
+
+  expect.deepEqual(address, {
+    street: 'Rua teste',
+    number: 'Numero teste',
+    complement: 'Complemento teste',
+    neighborhood: 'Bairro teste',
+    city: 'Cidade teste',
+    state: 'Estado teste',
+    postalCode: 'CEP teste'
+  })
+})
+
+test('given address with correct and alias for street keyword should be sanitized', expect => {
+  const address = sanitizer.sanitize({
+    streetName: 'Rua teste',
     number: 'Numero teste',
     complement: 'Complemento teste',
     neighborhood: 'Bairro teste',
